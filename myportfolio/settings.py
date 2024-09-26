@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-ibc!+g284_-j*8mn03jy2@-zy^d9+%ell1qcm!97oaj7lxbfz(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'chandu-portfolio-sigma.vercel.app']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'myportfolio-beryl-alpha.vercel.app']
 
 # Application definition
 
