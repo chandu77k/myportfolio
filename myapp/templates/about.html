@@ -1,0 +1,245 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" class="no-js" >
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About - Chandra Shekar</title>
+
+    <script>
+        document.documentElement.classList.remove('no-js');
+        document.documentElement.classList.add('js');
+    </script>
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="{% static 'css/vendor.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+</head>
+
+
+<body id="top">
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="dots-fade">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+
+    <!-- page wrap
+    ================================================== -->
+    <div id="page" class="s-pagewrap">
+
+
+        <!-- # site header 
+        ================================================== -->
+        <header class="s-header">
+
+            <div class="row s-header__inner width-sixteen-col">
+
+                <div class="s-header__block">
+                    <div class="s-header__logo">
+                        <a class="logo" href="{% url 'index' %}">
+                            <img src="{% static 'images/kcs-2.jpg' %}" alt="Homepage">
+                        </a>
+                    </div>
+
+                    <a class="s-header__menu-toggle" href="#0"><span>Menu</span></a>
+                </div> <!-- end s-header__block -->
+
+                <nav class="s-header__nav">
+    
+                    <ul class="s-header__menu-links">
+                        <li class="current"><a href="{% url 'about' %}">About</a></li>
+                        <li><a href="{% url 'services' %}">Certifications</a></li>
+                        <li><a href="{% url 'contact' %}">Contact</a></li>
+                    </ul> <!-- s-header__menu-links -->
+
+                    <div class="s-header__contact">
+                        <a href="{% url 'contact' %}" class="btn btn--primary s-header__contact-btn">Let's Work Together</a>                        
+                    </div> <!-- s-header__contact -->
+    
+                </nav> <!-- end s-header__nav -->
+
+            </div> <!-- end s-header__inner -->
+
+        </header> <!-- end s-header -->
+
+
+        <!-- # site main content
+        ================================================== -->
+        <section id="content" class="s-content">
+
+               <section class="s-pageheader pageheader">
+                    <div class="row">
+                        <div class="column xl-12">
+                            <h1 class="page-title">
+                                <span class="page-title__small-type text-pretitle">About</span>
+                                Hi, I'm Chandra Shekar
+                            </h1>
+                            
+                        </div>
+                    </div>
+               </section> <!-- end pageheader --> 
+
+               <section class="s-pagecontent pagecontent">
+
+                    <div class="row pageintro">
+                        <div class="column xl-6 lg-12">
+                            <h2 class="text-display-title">Some inspiring words to describe me...</h2>
+                        </div>
+                        <div class="column xl-6 lg-12 u-flexitem-x-right">
+                            <p class="lead">
+                                Passionate Problem Solver with a Drive for Innovation and Excellence in Software Development 
+                            As a dedicated and enthusiastic software developer, I bring a fresh perspective and a strong passion for solving complex problems. Throughout my education and hands-on projects, I have developed a deep understanding of programming languages, algorithms, and software engineering principles. I take pride in my ability to learn quickly and adapt to new technologies, ensuring that I can contribute effectively to any team.
+                            </p>
+                        </div>                       
+                    </div> <!-- end pageintro -->   
+                    
+                    <div class="row pagemedia" >
+                        <div class="column xl-12">
+                            <figure class="page-media" style="text-align: center;">                                
+                                <img src="{% static 'images/thumbs/about/port.jpg' %}" 
+                                     srcset="{% static 'images/thumbs/about/port.jpg' %} 2400w, 
+                                             {% static 'images/thumbs/about/port.jpg' %} 1200w, 
+                                             {% static 'images/thumbs/about/port.jpg' %} 600w" sizes="(max-width: 2400px) 100vw, 2400px" alt="">
+                            </figure>
+                        </div>
+                    </div> <!-- end pagemedia -->
+                    <!--education details-->
+                    <div class="row s-clients__content-block width-sixteen-col">
+                        <div class="column xl-12 grid-block grid-section-split">
+                        
+                            <div class="section-header grid-section-split__header">
+                                                         
+                                <h2 class="text-display-title" style="white-space: nowrap;">
+                                Educational Details
+                                </h2>       
+                            </div> <!-- end section-header -->
+                        
+                            <div class="grid-section-split__primary">
+                                <p class="lead" style="font-weight:bold; display: block; margin:0; padding: 0;">
+                                 B.Tech in Computer Science and Engineering ( Aug2020 - Apr2024 )
+                                 <p style="display: block; margin: 0; padding: 0;">Sri Vasavi Engineering College, Tadepalligudem</p>
+                                 <p>69.56 %</p>
+                                </p>   
+    
+                                <p class="lead" style="font-weight:bold; display: block; margin:0; padding: 0;">
+                                    Intermediate in MPC ( Jun2019 - Apr2020 )
+                                    <p style="display: block; margin: 0; padding: 0;">Sasi Junior College, Tanuku</p>
+                                    <p>79.40 %</p>
+                                   </p> 
+    
+                                   <p class="lead" style="font-weight:bold; display: block; margin:0; padding: 0;">
+                                    Secondary Education ( Jun2017 - Apr2018 )
+                                    <p style="display: block; margin: 0; padding: 0;">St. Ann's E.M High School, Tadepalligudem</p>
+                                    <p>90.25 %</p>
+                                   </p> 
+    
+                                
+                            </div> <!-- end grid-section-split__primary -->
+                        
+                        </div> <!-- end column -->
+                    </div> <!-- end row -->
+
+               </section> <!-- pagecontent -->
+            
+               <div class="column xl-12 grid-block grid-section-split">
+                <div class="section-header grid-section-split__header">              
+                   <h2 class="text-display-title" style="padding-left:50px; white-space: nowrap;">
+                   Technologies Known
+                   </h2>       
+                 </div>
+             </div>
+             <div class="row s-clients__content-block width-sixteen-col">
+                <div class="column xl-12">
+                
+                    <div class="clients-list">                            
+                        <div class="clients-list__item">
+                            <a href="https://www.w3schools.com/python/">
+                                <img src="{% static 'images/clients/python.svg' %}" alt="">
+                            </a>
+                        </div>
+                        <div class="clients-list__item">
+                            <a href="https://www.w3schools.com/django/">
+                                <img src="{% static 'images/clients/django.svg' %}" alt="">
+                            </a>
+                        </div>
+                        <div class="clients-list__item">
+                            <a href="https://www.w3schools.com/html/">
+                                <img src="{% static 'images/clients/html.svg' %}" alt="">
+                            </a>
+                        </div>
+                        <div class="clients-list__item">
+                            <a href="https://www.w3schools.com/css/">
+                                <img src="{% static 'images/clients/css.svg' %}" alt="">
+                            </a>
+                        </div>
+                        <div class="clients-list__item">
+                            <a href="https://www.w3schools.com/mysql/">
+                                <img src="{% static 'images/clients/sql.svg' %}" alt="">
+                            </a>
+                        </div>
+                        <div class="clients-list__item">
+                            <a href="https://www.w3schools.com/aws/">
+                                <img src="{% static 'images/clients/aws.svg' %}" alt="">
+                            </a>
+                        </div>
+                        
+                    </div> <!-- end clients-list -->
+
+                </div> <!-- end column -->
+             </div>
+               
+        </section> <!-- s-content-->
+
+        <!-- # cta
+        ================================================== -->
+        <section id="cta" class="s-cta">
+
+            <div class="row row-x-center text-center">
+                <div class="column xl-8 lg-12">
+
+                    <div class="s-cta__content">
+                        <h2 class="text-display-title">
+                            Let's Get in Touch!
+                        </h2>
+                        <p class="lead" style="display: block; margin: 0; padding: 0;">
+                            I'm always open to new opportunities, collaborations, or even a casual conversation about tech. Feel free to reach out!
+                        </p>
+                        <p class="lead">
+                            Whether you're looking for a passionate fresher, a tech enthusiast, or just someone with fresh ideas, I'd love to connect.
+                        </p>
+                        <a href="{% url 'contact' %}" class="btn btn--primary">Let's Work Together</a>
+                    </div>
+
+                </div>
+            </div>
+
+        </section> <!-- end s-cta -->
+    </div> <!-- end page-wrap -->
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="{% static 'js/plugins.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+</html>
